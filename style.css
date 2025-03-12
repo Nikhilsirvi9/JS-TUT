@@ -13,7 +13,7 @@ body{
 }
 
 .box{
-    height: 400px;
+    height: 450px;
     width: 350px;
     background-color: white;
     border-radius: 1rem;
@@ -30,7 +30,7 @@ img{
 }
 .box h1{
     font-size: 30px;
-    margin: 5px 0px;
+    margin: 15px 0px;
 }
 
 .box h4{
@@ -58,4 +58,39 @@ img{
 #add{
     background-color: green;
     color: white;
+}
+
+.im{
+    position: relative;
+    border-radius: 1rem;
+}
+
+p{
+    text-align: start;
+    padding: 0px 1rem;
+}
+
+.im #love{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: all ease 0.5s;
+    font-size: 50px;
+    color: white;
+    opacity: 0.7;
+}
+
+.desc{
+    display: flex;
+    align-items: center;
+
+}
+
+.desc .st{
+    background-color: bisque;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-weight: 800;
+    cursor: pointer;
 }

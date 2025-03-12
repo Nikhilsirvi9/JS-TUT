@@ -1,6 +1,35 @@
 var istatus = document.querySelector("h4");
-
 var addFriend = document.querySelector("#add");
+
+var img = document.querySelector(".im");
+var love = document.querySelector("i");
+var st = document.querySelector(".st");
+var info = document.querySelector(".info");
+
+let likeClick = 0;
+
+img.addEventListener("dblclick",function(){
+    if(likeClick===0)
+    {
+    love.style.transform = 'translate(-50%,-50%) scale(1)'
+    st.innerHTML = "Liked";
+    setTimeout(()=>{
+        love.style.transform = 'translate(-50%,-50%) scale(0)'
+    },1000)
+    likeClick = 1;
+    }
+    else{
+        info.innerHTML="Already Liked";
+
+    }
+})
+
+st.addEventListener("click",function(){
+    st.innerHTML = "Unliked";
+    likeClick = 0;
+    info.innerHTML="Double click Image to like";
+})
+
 
 let flag = 0;
 
