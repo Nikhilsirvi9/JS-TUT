@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+    height: 100vh;
+}
+
+.box{
+    height: 400px;
+    width: 350px;
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+img{
+    height: 50%;
+    width: 100%;;
+    object-fit: cover;
+    object-position: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.box h1{
+    font-size: 30px;
+    margin: 5px 0px;
+}
+
+.box h4{
+    font-size: 30px;
+    color: red;
+    margin: 10px 0px;
+}
+
+.btn
+{
+    display: flex;
+    margin: 20px 0px;
+    justify-content: center;
+
+    gap: 1rem;
+}
+
+.btn button{
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+#add{
+    background-color: green;
+    color: white;
+}
