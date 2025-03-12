@@ -94,3 +94,14 @@ p{
     font-weight: 800;
     cursor: pointer;
 }
+
+
+.cursor{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    mix-blend-mode:difference;
+    transform: all linear 0.2s;
+}

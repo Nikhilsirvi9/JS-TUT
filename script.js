@@ -6,6 +6,15 @@ var love = document.querySelector("i");
 var st = document.querySelector(".st");
 var info = document.querySelector(".info");
 
+var main = document.querySelector("body");
+var cursor = document.querySelector(".cursor");
+
+main.addEventListener("mousemove",function(desc){
+    console.log(desc.x)
+    cursor.style.left = desc.x+"px";
+    cursor.style.top = desc.y+"px";
+})
+
 let likeClick = 0;
 
 img.addEventListener("dblclick",function(){
